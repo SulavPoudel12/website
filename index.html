@@ -1,54 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sulav Poudel is a builder from Kathmandu creating practical web apps with React, Express, and Python." />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Sulav Poudel · Builder Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Sulav Poudel home">
+        <span class="brand-mark">S.</span>
+        <span>Sulav Poudel</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-link" href="https://github.com/603codes" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/logo.png">
-    <title>Home | Sulav</title>
-</head>
-
-<body>
-
-    <div id="navbar">
-        <nav id="bar">
-
-            <h1>Sulav Poudel</h1>
-            <ul>
-                <li class='navli'><a class="active" href="">Home</a></li>
-                <li class='navli'><a href="Projects.html">Projects</a></li>
-                <li class='navli'><a href="contact.html">Contact</a></li>
-            </ul>
-
-            
-            <div class="ham" id="ham1" onclick="navig()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+    <main>
+      <section class="hero section-wrap">
+        <div class="eyebrow"><span class="status-dot"></span> Builder based in Kathmandu, Nepal</div>
+        <div class="hero-grid">
+          <div>
+            <p class="kicker">IOTA / 603</p>
+            <h1>I build useful things for people who have better things to do.</h1>
+            <p class="hero-copy">Builder focused on practical web apps, fast MVPs, and software that earns its place in someone’s day. I work with React, Express, Python, and whatever else the problem actually needs.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">View selected work <span>↓</span></a>
+              <a class="button button-ghost" href="https://www.linkedin.com/in/sulav-poudel-184880394/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             </div>
+          </div>
+          <aside class="hero-card" aria-label="Developer snapshot">
+            <p class="card-label">NOW</p>
+            <p class="card-large">Building full-stack apps and practical tools for everyday use.</p>
+            <div class="signal-list">
+              <span>React</span><span>Express</span><span>Python</span><span>JavaScript</span>
+            </div>
+            <div class="mini-terminal" aria-hidden="true">
+              <span class="terminal-dim">$</span> make useful-things<br />
+              <span class="terminal-success">✓ shipping > theorizing</span>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-            <div id="cross" class="ham" onclick="navig1()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-        </nav>
-    </div>
+      <section class="marquee" aria-label="Skills">
+        <div class="marquee-track">
+          <span>REACT</span><i>✦</i><span>EXPRESS</span><i>✦</i><span>PYTHON</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>GIT & GITHUB</span><i>✦</i><span>REST APIs</span><i>✦</i>
+          <span>REACT</span><i>✦</i><span>EXPRESS</span><i>✦</i><span>PYTHON</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>GIT & GITHUB</span><i>✦</i><span>REST APIs</span><i>✦</i>
+        </div>
+      </section>
 
-    <div class="intro">
-        <img id="logoo" src="img/logo.png" alt="Load">
-        <h1>SULAV POUDEL</h1>
-        <hr>
-        <h1 id="hii">My name is Sulav. <br> I am a student of grade eight who loves coding.</h1>
-    </div>
+      <section class="section-wrap work-section" id="work">
+        <div class="section-head">
+          <div>
+            <p class="kicker">SELECTED WORK</p>
+            <h2>Selected projects and tools I’m actively building.</h2>
+          </div>
+          <p class="section-note">A mix of team work, hackathon builds, and projects from my learning journey.</p>
+        </div>
 
-    <footer>
-        <p>Copyright© Sulav Poudel | All rights reserved</p>
+        <div class="project-grid">
+          <article class="project project-featured">
+            <div class="project-topline"><span>01 / TEAM HACKATHON PROJECT</span><span>2026</span></div>
+            <div class="project-symbol">↗</div>
+            <div class="project-content">
+              <p class="project-category">Idea discovery platform</p>
+              <h3>FundMyVision</h3>
+              <p>A team-built platform for presenting early-stage ideas clearly and helping potential supporters or investors discover them.</p>
+              <div class="tag-row"><span>Team build</span><span>Hackathon MVP</span><span>Full stack</span></div>
+              <a href="https://github.com/Sushan2589/FundMyVision" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project project-dark">
+            <div class="project-topline"><span>02 / ACTIVE TOOL</span><span>WEB</span></div>
+            <div class="project-visual cbt-visual" aria-hidden="true">
+              <div class="cbt-window"><span class="cbt-dot"></span><span class="cbt-dot"></span><span class="cbt-dot"></span><b>CBT EXAM PORTAL</b><small>00:42:17</small></div>
+            </div>
+            <div class="project-content">
+              <p class="project-category">Exam-preparation tool</p>
+              <h3>CBT Exam Portal</h3>
+              <p>An active computer-based test portal for uploading structured exam JSON, running timed sessions, applying marking rules, and reviewing performance after submission.</p>
+              <div class="tag-row"><span>JavaScript</span><span>JSON</span><span>Exam workflow</span></div>
+              <a href="cbt.html">Open portal <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project project-dark">
+            <div class="project-topline"><span>03 / PERSONAL PROJECT</span><span>WEB</span></div>
+            <div class="project-visual clock-visual" aria-hidden="true"><span>07:03</span><small>alarm armed</small></div>
+            <div class="project-content">
+              <p class="project-category">Daily-use utility</p>
+              <h3>ClockAlarm</h3>
+              <p>A lightweight browser alarm project built while exploring interactive JavaScript interfaces.</p>
+              <div class="tag-row"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+              <a href="https://github.com/SulavPoudel12/ClockAlarm" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project project-light">
+            <div class="project-topline"><span>04 / PERSONAL PROJECT</span><span>WEB</span></div>
+            <div class="project-visual os-visual" aria-hidden="true">
+              <div class="os-window"><span></span><span></span><span></span><b>System online</b></div>
+            </div>
+            <div class="project-content">
+              <p class="project-category">Interface experiment</p>
+              <h3>Browser OS</h3>
+              <p>A browser-based operating-system interface built as a front-end experiment with HTML, CSS, and JavaScript.</p>
+              <div class="tag-row"><span>JavaScript</span><span>UI</span><span>HTML/CSS</span></div>
+              <a href="https://github.com/SulavPoudel12/OS" target="_blank" rel="noreferrer">View repository <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap about-section" id="about">
+        <div class="about-number">01</div>
+        <div class="about-copy">
+          <p class="kicker">ABOUT</p>
+          <h2>A builder with a habit of turning curiosity into working software.</h2>
+          <p>I’m a builder from Kathmandu, Nepal, focused on turning ideas into useful software. I use hackathons, workshops, and personal projects to test ideas in practice: build something, break it, fix it, and learn why it failed in the first place.</p>
+          <p>Right now, I’m growing my full-stack skills, building with AI-assisted workflows, and working on practical tools that solve real everyday problems.</p>
+          <div class="about-links">
+            <a href="https://github.com/603codes" target="_blank" rel="noreferrer"><span>01</span> Primary GitHub: 603codes ↗</a>
+            <a href="https://github.com/SulavPoudel12" target="_blank" rel="noreferrer"><span>02</span> Earlier projects: SulavPoudel12 ↗</a>
+          </div>
+        </div>
+        <div class="skill-stack">
+          <p class="card-label">WORKING WITH</p>
+          <ul>
+            <li><span>01</span> React</li>
+            <li><span>02</span> Node.js & Express</li>
+            <li><span>03</span> Python</li>
+            <li><span>04</span> JavaScript</li>
+            <li><span>05</span> MongoDB & SQL basics</li>
+            <li><span>06</span> Git, GitHub & REST APIs</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-wrap notes-section">
+        <p class="kicker">BUILDING NEXT</p>
+        <div class="notes-grid">
+          <div class="note-card"><span class="note-index">01</span><h3>Health & research tools</h3><p>Exploring practical AI tools that can reduce friction in real workflows, including life-sciences documentation.</p></div>
+          <div class="note-card"><span class="note-index">02</span><h3>Better full-stack systems</h3><p>Improving how I design APIs, data models, deployments, and interfaces that do more than just look convincing in a screenshot.</p></div>
+          <div class="note-card"><span class="note-index">03</span><h3>Hackathon-ready MVPs</h3><p>Building quickly, validating early, and learning how to keep a scope small enough for humans to finish.</p></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-wrap contact-inner">
+          <p class="kicker">LET’S BUILD</p>
+          <h2>Have a real problem worth turning into software?</h2>
+          <p>I’m always interested in thoughtful collaborations, hackathon teams, and useful product ideas.</p>
+          <div class="contact-links">
+            <a href="mailto:nbsulav603@gmail.com">Email me <span>↗</span></a>
+            <a href="https://x.com/iota603" target="_blank" rel="noreferrer">@iota603 on X <span>↗</span></a>
+            <a href="https://www.linkedin.com/in/sulav-poudel-184880394/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <p>© <span id="year"></span> Sulav Poudel. Built with care and an ongoing habit of improving every project.</p>
+      <a href="#top">Back to top ↑</a>
     </footer>
-</body>
 
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
